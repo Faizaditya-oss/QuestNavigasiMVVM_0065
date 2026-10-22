@@ -1,3 +1,4 @@
+package com.faiz.questnavigasimvvm_0065
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -7,6 +8,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.faiz.questnavigasimvvm_0065.view.FormIsian
+import com.faiz.questnavigasimvvm_0065.view.TampilData
 
 enum class Navigasi {
     FormulirSaya,
