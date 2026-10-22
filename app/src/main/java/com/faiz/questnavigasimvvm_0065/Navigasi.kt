@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.material3.Scaffold
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 
 enum class Navigasi {
@@ -24,7 +25,17 @@ fun DataApp(
         ) {
             composable(route = Navigasi.FormulirSaya.name) {
                 FormIsian(
-                    onSubmitBtnClick = {}
+                    onSubmitBtnClick = {
+                        navController.navigate(
+                            route = Navigasi.Detail.name
+                        )
+                    }
+                )
+            }
+
+            composable(route = Navigasi.Detail.name) {
+                TampilData(
+                    onBackBtnClick = {}
                 )
             }
         }
